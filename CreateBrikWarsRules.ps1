@@ -56,14 +56,17 @@ $pages = @('https://brikwars.com/rules/2020/cover.htm',
            'https://brikwars.com/rules/2020/d.htm'
            )
 
+$files = [System.Collections.ArrayList]@()
 For ($i=0; $i -lt $pages.Length; $i++) {
     $page = $pages[$i]
     $split = $page.Split('/')
     $file = $split[$split.Length - 1] + '.pdf'
     $outLocation = $brikWarsPath + $i + '.pdf' #keeps em in order
+    $files.Add($outLocation)
     wkhtmltopdf.exe $page $outLocation
 }
 
 #combine
 cd $brikWarsPath
-Merge-Pdf -OutputPath BrikWarsRules.pdf 
+echo $files
+$files | Merge-Pdf -OutputPath BrikWarsRules.pdf 

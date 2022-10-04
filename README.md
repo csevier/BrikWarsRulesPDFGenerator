@@ -1,7 +1,10 @@
-Purpose:
+
+Purpose
+=======
 Auto generate BrikWarsRules.pdf from the website: https://brikwars.com/rules/2020/cover.htm
 
-Use:
+Use
+===
 This requires powershell 7. Installer here:
 https://github.com/PowerShell/PowerShell/releases/download/v7.2.6/PowerShell-7.2.6-win-x64.msi
 
@@ -17,5 +20,6 @@ Open BrikWarsRules.pdf and laugh your ass off.
  
 
 
-To do: 
+To do
+===== 
 Make year agnostic.

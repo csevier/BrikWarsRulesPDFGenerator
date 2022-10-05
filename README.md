@@ -24,8 +24,3 @@ It will download its dependencies if you dont have them so just follow the insta
 You rules will the be downloaded into a BrikWars folder in your Downloads.
 
 Open BrikWarsRules.pdf and laugh your ass off.
-
-
-To do
-===== 
-Make year agnostic.
